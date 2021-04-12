@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -18,16 +18,41 @@
           <div class="display" id="pokemon">
             <img class="imgPokemon" src="" alt="" id="imgPokemon" />
             <br />
-            <span></span>
+            <span class="name"></span>
+            <hr id="line" />
+
+            <div class="ataque" id="ataque">
+              <span class="ataquespan"></span>
+              <p class="ataquep"></p>
+            </div>
+
+            <div class="ataquespecial" id="ataquespecial">
+              <span class="ataquespecialspan"></span>
+              <p class="ataquespecialp"></p>
+            </div>
+
+            <div class="defensa" id="defensa">
+              <span class="defensaspan"></span>
+              <p class="defensap"></p>
+            </div>
           </div>
         </div>
         <br />
         <div class="controls">
-          <button class="circle" onclick="iniciar()"></button>
+          <a class="btn" onclick="iniciar()"></a>
         </div>
       </div>
     </div>
-
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
+  <footer>
+    <span
+      >Created by
+      <a href="https://github.com/Sanchez-Guerrero">Sanchez-Guerrero</a>.<img
+        src="img/PikPng.com_pokeballs-png_1358145.png"
+        alt=""
+        width="25px"
+        height="25px"
+    /></span>
+  </footer>
 </html>
