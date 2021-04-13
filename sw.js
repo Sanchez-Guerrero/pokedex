@@ -1,4 +1,4 @@
-const CACHE_NAME = "cache_pokedex",
+const CACHE_NAME = "v1_cache_pokedex",
   urlsToCache = [
     "./",
     "./styles/styles.css",
