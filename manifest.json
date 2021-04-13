@@ -1,7 +1,7 @@
 {
-    "name": "#Pokedex",
-    "short_name": "#Pokedex",
-    "description": "Bienvenid@s a #Pokedex",
+    "name": "Pokédex",
+    "short_name": "Pokédex",
+    "description": "Bienvenid@s a Pokédex",
     "background_color": "#a3d7d4",
     "theme_color": "#c76212",
     "orientation": "portrait",
