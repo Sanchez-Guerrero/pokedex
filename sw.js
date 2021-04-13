@@ -7,16 +7,16 @@ const CACHE_NAME = "cache_pokedex",
     "https://github.com/Sanchez-Guerrero",
   ];
 
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches
-      .open(CACHE_NAME)
-      .then((cache) => {
-        return cache.addAll(urlsToCache).then(() => self.skipWaiting());
-      })
-      .catch((err) => console.log("Failded register to cache", err))
-  );
-});
+  self.addEventListener("install", e => {
+    e.waitUntil(
+      caches.open(CACHE_NAME)
+        .then(cache => {
+          return cache.addAll(urlsToCache)
+            .then(() => self.skipWaiting())
+        })
+        .catch(err => console.log("Falló registro de cache", err))
+    )
+  });
 
 self.addEventListener("activate", (e) => {
   const cacheWhitelist = [CACHE_NAME];
